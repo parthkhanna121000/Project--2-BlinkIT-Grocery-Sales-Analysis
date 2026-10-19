@@ -16,12 +16,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Upload the Excel file
-uploaded = files.upload()
+import pandas as pd
 
-# Read the uploaded Excel file
-filename = next(iter(uploaded))
-df = pd.read_excel(filename)
+# Read the Excel file directly from your project folder
+df = pd.read_excel("BlinkIT Grocery Data.xlsx") 
+
+# Display the first 5 rows
+print(df.head())
 
 # Display the first 5 rows
 print(df.head())
